@@ -3,6 +3,8 @@ title: "Using_github_tutorial"
 author: "Tesswin Thomas"
 date: "2/15/2022"
 output: html_document
+editor_options: 
+  chunk_output_type: console
 ---
 
 
@@ -12,15 +14,35 @@ This document is created to review on how to use git with R studio.
 From this project onwards, all the codes to be synced with github
 
 Some initialization 
-- Make sure the 
+- Make sure "create a git repository" is checked when creating a project 
+- Pre-requisites 
+- Installed version of git in the computer 
+- A github account 
+- Creation of personal access token in github account via settings/developersettings/personalaccesstoken 
+- Storing of this token in r environment 
+
+- before that initialize the library 
 
 ```{r installing_packages}
-
 # the library required is "usethis" 
 
 # install.packages("usethis") 
 library(usethis)
+```
 
+- use the following command to save the personal access token from github to r_environment 
 
+```{r environment_check}
+edit_r_environ()
+# the copied PAT is stored in R environement as GITHUB_PAT = "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"
+
+# restart R to take the R environment to take effect 
+```
+
+- Now need to use use_github function to 
+
+```{r}
+
+use_github(protocol = "https", auth_token = Sys.getenv("GITHUB_PAT"))
 
 ```
