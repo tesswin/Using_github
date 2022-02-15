@@ -42,7 +42,7 @@ edit_r_environ()
 - following code to use to connect to github 
 
 ```{r}
-use_git_config(user.name = "tesswin", user.email = "tesswin@gmail.com")
+use_git_config(user.name = "xxx", user.email = "xxx@xxx.com")
 ```
 
 - Now need to use use_github function to 
