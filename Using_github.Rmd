@@ -1,0 +1,26 @@
+---
+title: "Using_github_tutorial"
+author: "Tesswin Thomas"
+date: "2/15/2022"
+output: html_document
+---
+
+
+# Using github - a tutorial 
+
+This document is created to review on how to use git with R studio. 
+From this project onwards, all the codes to be synced with github
+
+Some initialization 
+- Make sure the 
+
+```{r installing_packages}
+
+# the library required is "usethis" 
+
+# install.packages("usethis") 
+library(usethis)
+
+
+
+```
