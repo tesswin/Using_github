@@ -39,10 +39,16 @@ edit_r_environ()
 # restart R to take the R environment to take effect 
 ```
 
+- following code to use to connect to github 
+
+```{r}
+use_git_config(user.name = "tesswin", user.email = "tesswin@gmail.com")
+```
+
 - Now need to use use_github function to 
 
 ```{r}
-
 use_github(protocol = "https", auth_token = Sys.getenv("GITHUB_PAT"))
-
 ```
+
+- use the commit from "Git" tab to commit and "push" to push the codes to github repository 
